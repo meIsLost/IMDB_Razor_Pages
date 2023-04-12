@@ -1,0 +1,77 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "TitleDBContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "RazorPages_IMDB",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[DirectorForTitles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Genres]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[NameKnownForTitles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[NamePrimaryProfessions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[names]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PrimaryProfessions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TitleGenres]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Titles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TitleTypes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WriterForTitles]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "ZORO.TitleDB",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

@@ -1,0 +1,53 @@
+﻿@page
+@model IMDB.Pages.Ttiles.GetAllTitlesModel
+@{
+}
+<h1 style="color:deepskyblue"> List of All Titles</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>  Tconst </th>
+            <th>  TitleTypeId </th>
+            <th>  PrimaryTitle </th>
+            <th>  OriginalTitle </th>
+            <th>  IsAdult </th>
+            <th>  StartYear</th>
+            <th> EndYear</th>
+            <th> Runtime</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (Model != null)
+        {
+            @foreach (var @item in Model.Titles)
+            {
+                <tr>
+                    <td>  @item.Tconst </td>
+                    <td>  @item.TitleTypeId </td>
+                    <td>  @item.PrimaryTitle </td>
+                    <td>  @item.OriginalTitle </td>
+                    <td>  @item.IsAdult </td>
+                    <td>  @item.StartYear</td>
+                    <td>  @item.EndYear</td>
+                    <td>  @item.Runtime</td>
+                    
+
+
+
+
+
+
+                </tr>
+            }
+        }
+</table>
+<form method="post">
+    <label for="myNumber">Enter a page number:</label>
+    <input type="number" id="myNumber" name="MyNumber" />
+    <button type="submit">Submit</button>
+</form>
+
+
+    
