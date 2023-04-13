@@ -1,4 +1,5 @@
 using IMDB.Services.Interfaces;
+using IMDB.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using RazorPages_IMDB.Models;
@@ -9,8 +10,9 @@ namespace IMDB.Pages.Ttiles
     {
         [BindProperty]
         public int MyNumber { get; set; }
+      
 
-        public IEnumerable<Title> Titles { get; set; }
+        public IEnumerable<TitleTypeIDView> Titles { get; set; }
 
 
         private ITitleService titleService;
