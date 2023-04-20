@@ -1,0 +1,44 @@
+﻿@page
+@model IMDB.Names.GetAllNamesModel
+@{
+}<h1 style="color:deepskyblue"> List of All Titles</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th> Nconst</th>
+            <th> PrimaryName </th>
+            <th>  BirthYear</th>
+            <th> DeathYear  </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (Model != null)
+        {
+            @foreach (var @item in Model.Names)
+            {
+                <tr>
+                    <td>  @item.Nconst </td>
+                    <td>  @item.PrimaryName </td>
+                    <td>  @item.BirthYear </td>
+                    <td>  @item.DeathYear </td>
+                    
+                   
+
+
+
+
+
+
+
+                </tr>
+            }
+        }
+</table>
+<form method="post">
+    <label for="myNumber">Enter a page number:</label>
+    <input type="number" id="myNumber" name="MyNumber" />
+    <button type="submit">Submit</button>
+</form>
+

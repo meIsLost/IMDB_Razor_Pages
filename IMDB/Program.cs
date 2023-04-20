@@ -1,6 +1,7 @@
 using IMDB.Services.EF_Services;
 using IMDB.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using RazorPages_IMDB.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,8 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<TitleDBContext>(Options => Options.UseSqlServer(builder.Configuration.GetConnectionString("TitleDB")));
 builder.Services.AddTransient<ITitleService, EFTitleService>();
+builder.Services.AddTransient<INameService, EFNameService>();
 
 var app = builder.Build();
+
+
+  
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -29,9 +29,33 @@
                     <td>  @item.PrimaryTitle </td>
                     <td>  @item.OriginalTitle </td>
                     <td>  @item.IsAdult </td>
+                    @if (@item.StartYear == 0)
+                    {
+                        <td></td>
+                    }
+                    else 
+                    {
                     <td>  @item.StartYear</td>
-                    <td>  @item.EndYear</td>
-                    <td>  @item.Runtime</td>
+                    }
+                        
+                    @if (@item.EndYear == 0)
+                    {
+                        <td></td>
+                    }
+                    else 
+                    {
+                        <td>  @item.EndYear</td>
+                    }
+                    
+                    @if (@item.Runtime == 0)
+                    {
+                        <td></td>
+                    }
+                    else 
+                    {
+                        <td>  @item.Runtime</td>
+                    }
+                 
                     
 
 
